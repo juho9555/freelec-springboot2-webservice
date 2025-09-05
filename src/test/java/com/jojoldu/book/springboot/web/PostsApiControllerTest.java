@@ -21,7 +21,7 @@ import org.springframework.http.ResponseEntity;
 import com.jojoldu.book.springboot.domain.posts.Posts;
 import com.jojoldu.book.springboot.domain.posts.PostsRepository;
 import com.jojoldu.book.springboot.web.dto.PostsSaveRequestDto;
-// import com.jojoldu.book.springboot.web.dto.PostsUpdateRequestDto;
+import com.jojoldu.book.springboot.web.dto.PostsUpdateRequestDto;
 
 
 // 검증 라이브러리
@@ -104,7 +104,7 @@ public class PostsApiControllerTest {
         assertThat(all.get(0).getTitle()).isEqualTo(title);       // 제목 확인
         assertThat(all.get(0).getContent()).isEqualTo(content);   // 내용 확인
     }
-/*
+
     @Test
     public void Posts_수정된다() throws Exception {
         //given
@@ -135,5 +135,4 @@ public class PostsApiControllerTest {
         assertThat(all.get(0).getTitle()).isEqualTo(expectedTitle);
         assertThat(all.get(0).getContent()).isEqualTo(expectedContent);
     }
-*/
 }
